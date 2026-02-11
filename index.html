@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>geviuslist</title>
+<style>
+body {
+    font-family: "Times New Roman", serif;
+    background-color: white;
+    color: black;
+    margin: 40px;
+    max-width: 900px;
+}
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 20px;
+    margin-top: 40px;
+}
+h3 {
+    font-size: 18px;
+    margin-top: 25px;
+}
+.math {
+    margin-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>geviuslist</h1>
+
+<h2>EPISODE 1: Computing beyond Buchholz's Hydra</h2>
+
+<h3>Definitions</h3>
+
+<h3>CBHS-1</h3>
+
+<p>For n &lt; ω:</p>
+
+<div class="math">[n] = BH(n)</div>
+<div class="math">[n,0] = [n]</div>
+<div class="math">[n,1] = [[n,0],0]</div>
+<div class="math">[n,m] = [[n,m-1], m-1]</div>
+<div class="math">[n,m,0] = [n,m]</div>
+<div class="math">[n,m,q] = [[n,m,q-1], [n,m,q-1], q-1]</div>
+
+<h3>CBHS-2</h3>
+
+<p>Let Φ be a valid CBHS-1 array.</p>
+
+<div class="math">{Φ}<sub>0,0</sub> = Φ</div>
+<div class="math">{Φ}<sub>1,0</sub> = [Φ, Φ, Φ]</div>
+<div class="math">{Φ}<sub>n,0</sub> = [{Φ}<sub>n-1,0</sub>, {Φ}<sub>n-1,0</sub>, {Φ}<sub>n-1,0</sub>]</div>
+<div class="math">{Φ}<sub>n,m</sub> = {Φ}<sub>{Φ}<sub>n,m-1</sub>, m-1}</div>
+
+<h2>EPISODE 2: Abusing the BEAF notation</h2>
+
+<div class="math">"Arraygaxxul" = gaggol &amp; gaggol</div>
+<div class="math">"Arraygaxxulplex" = Arraygaxxul &amp; Arraygaxxul &amp; Arraygaxxul</div>
+<div class="math">"Arraygaxxulplexian" = Arraygaxxulplex &amp; Arraygaxxulplex &amp; Arraygaxxulplex &amp; Arraygaxxulplex</div>
+
+</body>
+</html>
