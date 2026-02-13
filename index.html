@@ -72,5 +72,35 @@ h3 {
 <div class="math">"Pentegaxxulplex" = {Pentegaxxul ↑↑↑ X ↑↑↑ X}↑↑↑{X ↑↑↑ X ↑↑↑ X}</div>
 <div class="math">"Pentegaxxulplexian" = {Pentegaxxulplex ↑↑↑ X ↑↑↑ X}↑↑↑{X ↑↑↑ X ↑↑↑ X}</div>
 
+<h2>EPISODE 3: Jupiterian algorithm (JA₀)</h2>
+
+<div class="math">Nu-linear level
+
+ν([a, 0, 0]) = a↑a
+ν([a, b, 0]) = ν([a↑X, b-1, 0]), X = ν([a↑a, b-1, 0])
+ν([a, b, c]) = ν([a↑X, b↑X, c-1]), X = ν([a↑a, b↑b, c-1])
+
+ν([a, 0, 0]#[a, 0, 0]) = ν([a, a, a])
+ν([a, b, 0]#[a, 0, 0]) = ν([a, ν([b, b, b]), a])
+ν([a, b, c]#[a, 0, 0]) = ν([a, b, ν([c, c, c])])
+ν([a, 0, 0]#[a, b, 0]) = ν([X, X, X]), X = ν([a, 0, 0]#[a, b-1, 0]) 
+ν([a, b, 0]#[a, b, 0]) = ν([X, X, X]), X = ν([a, b, 0]#[a, b-1, 0]) 
+ν([a, b, c]#[a, b, 0]) = ν([X, X, X]), X = ν([a, b, c]#[a, b-1, 0]) 
+ν([a, 0, 0]#[a, b, c]) = ν([X, X, X]), X = ν([a, 0, 0]#[a, b, c-1]) 
+ν([a, b, 0]#[a, b, c]) = ν([X, X, X]), X = ν([a, b, 0]#[a, b, c-1]) 
+ν([a, b, c]#[a, b, c]) = ν([X, X, X]), X = ν([a, b, c]#[a, b, c-1]) 
+
+Nu-dimensional level
+
+ν([a, b, c]⁽⁰⁾) = ν([a, b, c]#[a, b, c])
+ν([a, b, c]⁽ⁿ⁾) = ν([ν([a, b, c]⁽ⁿ¯¹⁾), ν([a, b, c]⁽ⁿ¯¹⁾), ν([a, b, c]⁽ⁿ¯¹⁾)]⁽ⁿ¯¹⁾)
+
+Jupiter function
+
+Γ⁰₀(n) = ν([n, n, n]⁽ⁿ⁾)
+Γⁿ₀(n) = ν([Γⁿ¯¹₀(n), Γⁿ¯¹₀(n), Γⁿ¯¹₀(n)]⁽ⁿ⁾)
+Γⁿₙ(n) = ν([Γⁿ¯¹ₙ-₁(n), Γⁿ¯¹ₙ-₁(n), Γⁿ¯¹ₙ-₁(n)]⁽ⁿ⁾)
+</div>
+
 </body>
 </html>
