@@ -2,44 +2,61 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>The Gevius list</title>
+<title>The Gevius List</title>
 <style>
 body {
-    font-family: "Georgia", serif;
-    background-color: black;
-    color: white;
-    margin: 40px;
-    max-width: 900px;
+    font-family: "Times New Roman", Times, serif;
+    background-color: white;
+    color: black;
+    margin: 60px auto;
+    max-width: 800px;
+    line-height: 1.6;
 }
 h1 {
+    text-align: center;
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+.author {
+    text-align: center;
+    margin-bottom: 30px;
 }
 h2 {
     font-size: 20px;
     margin-top: 40px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
 }
 h3 {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 25px;
 }
 .math {
-    margin-left: 20px;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-left: 40px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-family: monospace;
+}
+.abstract {
+    border: 1px solid #000;
+    padding: 10px;
+    margin-bottom: 40px;
 }
 </style>
 </head>
 
 <body>
 
-<h1>The Gevius list</h1>
+<h1>The Gevius List</h1>
+<div class="author">Lucian V. — February 2026</div>
 
-<h2>EPISODE 1: Computing beyond Buchholz's Hydra</h2>
+<div class="abstract">
+<b>Abstract.</b> We introduce a hierarchy of rapidly growing constructions organized into three episodes: CBHS arrays, BEAF-style symbolic hyperstructures, and the Jupiterian Algorithm (JA₀).
+</div>
 
-<h3>Definitions</h3>
+<h2>1. Episode I: Computing Beyond Buchholz's Hydra</h2>
 
-<h3>CBHS-1</h3>
+<h3>1.1 CBHS-1</h3>
 
 <p>For n &lt; ω:</p>
 
@@ -50,7 +67,7 @@ h3 {
 <div class="math">[n,m,0] = [n,m]</div>
 <div class="math">[n,m,q] = [[n,m,q-1], [n,m,q-1], q-1]</div>
 
-<h3>CBHS-2</h3>
+<h3>1.2 CBHS-2</h3>
 
 <p>Let Φ be a valid CBHS-1 array.</p>
 
@@ -59,48 +76,38 @@ h3 {
 <div class="math">{Φ}<sub>n,0</sub> = [{Φ}<sub>n-1,0</sub>, {Φ}<sub>n-1,0</sub>, {Φ}<sub>n-1,0</sub>]</div>
 <div class="math">{Φ}<sub>n,m</sub> = {Φ}<sub>{Φ}<sub>n,m-1</sub>, m-1}</div>
 
-<h2>EPISODE 2: Abusing the BEAF notation</h2>
-<h3>Arraygaxxul series</h2>
+<h2>2. Episode II: Abusing the BEAF Notation</h2>
+
+<h3>2.1 Arraygaxxul Series</h3>
 
 <div class="math">"Arraygaxxul" = gaggol &amp; gaggol</div>
 <div class="math">"Arraygaxxulplex" = Arraygaxxul &amp; Arraygaxxul &amp; Arraygaxxul</div>
 <div class="math">"Arraygaxxulplexian" = Arraygaxxulplex &amp; Arraygaxxulplex &amp; Arraygaxxulplex &amp; Arraygaxxulplex</div>
 
-<h3>Pentegaxxul series</h2>
-    
-<div class="math">"Pentegaxxul" = {Arraygaxxul ↑↑↑ X ↑↑↑ X}↑↑↑{X ↑↑↑ X ↑↑↑ X}</div>
-<div class="math">"Pentegaxxulplex" = {Pentegaxxul ↑↑↑ X ↑↑↑ X}↑↑↑{X ↑↑↑ X ↑↑↑ X}</div>
-<div class="math">"Pentegaxxulplexian" = {Pentegaxxulplex ↑↑↑ X ↑↑↑ X}↑↑↑{X ↑↑↑ X ↑↑↑ X}</div>
+<h3>2.2 Pentegaxxul Series</h3>
 
-<h2>EPISODE 3: Jupiterian algorithm (JA₀)</h2>
+<div class="math">Pentegaxxul = {Arraygaxxul ↑↑↑ X ↑↑↑ X} ↑↑↑ {X ↑↑↑ X ↑↑↑ X}</div>
+<div class="math">Pentegaxxulplex = {Pentegaxxul ↑↑↑ X ↑↑↑ X} ↑↑↑ {X ↑↑↑ X ↑↑↑ X}</div>
+<div class="math">Pentegaxxulplexian = {Pentegaxxulplex ↑↑↑ X ↑↑↑ X} ↑↑↑ {X ↑↑↑ X ↑↑↑ X}</div>
 
-<div class="math">Nu-linear level
+<h2>3. Episode III: Jupiterian Algorithm (JA₀)</h2>
 
-ν([a, 0, 0]) = a↑a
-ν([a, b, 0]) = ν([a↑X, b-1, 0]), X = ν([a↑a, b-1, 0])
-ν([a, b, c]) = ν([a↑X, b↑X, c-1]), X = ν([a↑a, b↑b, c-1])
+<h3>3.1 Nu-linear Level</h3>
 
-ν([a, 0, 0]#[a, 0, 0]) = ν([a, a, a])
-ν([a, b, 0]#[a, 0, 0]) = ν([a, ν([b, b, b]), a])
-ν([a, b, c]#[a, 0, 0]) = ν([a, b, ν([c, c, c])])
-ν([a, 0, 0]#[a, b, 0]) = ν([X, X, X]), X = ν([a, 0, 0]#[a, b-1, 0]) 
-ν([a, b, 0]#[a, b, 0]) = ν([X, X, X]), X = ν([a, b, 0]#[a, b-1, 0]) 
-ν([a, b, c]#[a, b, 0]) = ν([X, X, X]), X = ν([a, b, c]#[a, b-1, 0]) 
-ν([a, 0, 0]#[a, b, c]) = ν([X, X, X]), X = ν([a, 0, 0]#[a, b, c-1]) 
-ν([a, b, 0]#[a, b, c]) = ν([X, X, X]), X = ν([a, b, 0]#[a, b, c-1]) 
-ν([a, b, c]#[a, b, c]) = ν([X, X, X]), X = ν([a, b, c]#[a, b, c-1]) 
+<div class="math">ν([a,0,0]) = a↑a</div>
+<div class="math">ν([a,b,0]) = ν([a↑X, b-1, 0]), X = ν([a↑a, b-1, 0])</div>
+<div class="math">ν([a,b,c]) = ν([a↑X, b↑X, c-1]), X = ν([a↑a, b↑b, c-1])</div>
 
-Nu-dimensional level
+<h3>3.2 Nu-dimensional Level</h3>
 
-ν([a, b, c]⁽⁰⁾) = ν([a, b, c]#[a, b, c])
-ν([a, b, c]⁽ⁿ⁾) = ν([ν([a, b, c]⁽ⁿ¯¹⁾), ν([a, b, c]⁽ⁿ¯¹⁾), ν([a, b, c]⁽ⁿ¯¹⁾)]⁽ⁿ¯¹⁾)
+<div class="math">ν([a,b,c]⁽⁰⁾) = ν([a,b,c]#[a,b,c])</div>
+<div class="math">ν([a,b,c]⁽ⁿ⁾) = ν([ν([a,b,c]⁽ⁿ¯¹⁾), ν([a,b,c]⁽ⁿ¯¹⁾), ν([a,b,c]⁽ⁿ¯¹⁾)]⁽ⁿ¯¹⁾)</div>
 
-Jupiter function
+<h3>3.3 Jupiter Function</h3>
 
-Γ⁰₀(n) = ν([n, n, n]⁽ⁿ⁾)
-Γⁿ₀(n) = ν([Γⁿ¯¹₀(n), Γⁿ¯¹₀(n), Γⁿ¯¹₀(n)]⁽ⁿ⁾)
-Γⁿₙ(n) = ν([Γⁿ¯¹ₙ-₁(n), Γⁿ¯¹ₙ-₁(n), Γⁿ¯¹ₙ-₁(n)]⁽ⁿ⁾)
-</div>
+<div class="math">Γ⁰₀(n) = ν([n,n,n]⁽ⁿ⁾)</div>
+<div class="math">Γⁿ₀(n) = ν([Γⁿ¯¹₀(n), Γⁿ¯¹₀(n), Γⁿ¯¹₀(n)]⁽ⁿ⁾)</div>
+<div class="math">Γⁿₙ(n) = ν([Γⁿ¯¹ₙ-₁(n), Γⁿ¯¹ₙ-₁(n), Γⁿ¯¹ₙ-₁(n)]⁽ⁿ⁾)</div>
 
 </body>
 </html>
